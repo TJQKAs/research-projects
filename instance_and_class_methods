@@ -1,0 +1,33 @@
+What is a class method?
+
+A class method is a method that is called upon a Class. For example:
+
+class = Class.new
+
+In this example .new is the class method that is acting on the Class class.
+
+What is an instance method?
+
+An instance method is a method that can only be called upon an instance of a Class. For example:
+
+class.instance_method
+
+In this example, we are taking the class instance we instantiated previously and instance_method is our instance method that is acting on the instance class.
+
+One final example that puts the two together:
+
+class Computer
+
+def self.keyboard #====> This defines a new class method of Computer
+puts ‘I type things’ 
+end
+
+def mouse #====> This defines a new instance method for Computer that can be called upon an instance of Computer
+puts ‘I move your cursor’
+end
+
+end
+
+
+Catherine & Anthony 03/09/15
+
