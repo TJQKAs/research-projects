@@ -2,7 +2,7 @@ Describe the difference between composition and inheritance.
 
 Inheritance is used is used when we want a new a class to inherit the features/methods from its parent class. The 'child' class will be able to use all features of its 'parent' class. However, any modifications made to the child class will only affect the child class, and not the parent which will remain as originally defined.
 
------------------
+````
 
 class Parent
    def override
@@ -22,7 +22,7 @@ child = Child.new
 parent.override ===> "Parent string"
 child.override ===> "Child string"
 
------------------
+````
 
 Composition on the other hand does not alter or even require a parent class. Composition is used so that our primary class works in harmony with a module (or class) that has methods which our primary class could access when it requires a different method. The code from the module is not overwriting anything within our primary class but rather the primary class is accessing the method from the module.  
 
@@ -42,7 +42,7 @@ Give code examples of using inheritance to build ships.
 
 Example: (some code removed for brevity)
 
------------------
+`````
 
 class Ship
 
@@ -62,6 +62,5 @@ class Aircraft_Carrier < Ship
    end
 end
 
------------------
-
+````
 In this example our subclass Battleship inherits the method receive_hit from the parent class Ship. This is a method that all different types of ship would require. However, it alters the @number_of_hits array as each class of ship will have different lives according to its size.
